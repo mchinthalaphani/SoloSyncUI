@@ -1,0 +1,15 @@
+package com.charter.solo.sync.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class AppResourcesController {
+
+	@RequestMapping(value = "/home")
+	public String loadHome(Model model) {
+		return "index";
+	}
+
+}
